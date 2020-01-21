@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+android:text="Remote Key"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Switch
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:id="@+id/engine"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Engine" />
+
+  <Button
+      android:id="@+id/permanentOff"
+      android:background="@drawable/buttonstl"
+      android:layout_weight="0.5"
+      android:textSize="25sp"
+      android:textColor="@android:color/white"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+        android:text="Permanent off"
+      />
+    <Button
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/fuelLock"
+android:background="@drawable/newbtn"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuel lock"
+        />
+</LinearLayout>
